@@ -11,19 +11,13 @@
     </head>
     <body >
 
-            <button onclick="goBack()">Kembali</button>
-            <script>
-                function goBack() {
-                    window.history.back();
-                }
-            </script>
-
         <div class="d-flex align-items-center light-blue-gradient" style="height: 100vh;">
             <div class="container" >
                 <div class="d-flex justify-content-center">
                     <div class="col-md-6">
                         <div class="card rounded-0 shadow">
                             <div class="card-body">
+
                                 <h3>Formulir Undangan</h3>
                                 <form>
                                     <div class="form-group">
@@ -76,7 +70,13 @@
                                         <label class="form-check-label" for="exampleCheck1">Semua data yang diinput sudah benar?</label>
                                     </div>
 
-                                    <button> <a href="whatsapp://send?text=Hello&phone=+6262 858-9478-4145" type="submit" class="tombol">Submit</button>
+                                    <button onclick="goBack()">Kembali</button>
+                                    <script>
+                                        function goBack() {
+                                            window.history.back();
+                                        }
+                                    </script>
+                                    <button> <a href="whatsapp://send?text=Hello&phone=+6262 858-9478-4145" type="submit" class="button">Submit</button>
                                 </form>
                             </div>
                         </div>
