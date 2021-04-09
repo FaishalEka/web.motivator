@@ -2,6 +2,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
 .light-blue-gradient {
   background: linear-gradient(120deg, #0D57AC 0%, #0caf35 100%);
 }

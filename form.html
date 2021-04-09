@@ -10,6 +10,14 @@
         <title>Formulir Undangan</title>
     </head>
     <body >
+
+            <button onclick="goBack()">Kembali</button>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+
         <div class="d-flex align-items-center light-blue-gradient" style="height: 100vh;">
             <div class="container" >
                 <div class="d-flex justify-content-center">
@@ -68,7 +76,7 @@
                                         <label class="form-check-label" for="exampleCheck1">Semua data yang diinput sudah benar?</label>
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button> <a href="whatsapp://send?text=Hello&phone=+6262 858-9478-4145" type="submit" class="#">Submit</button>
                                 </form>
                             </div>
                         </div>
