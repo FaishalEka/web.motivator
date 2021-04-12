@@ -10,10 +10,20 @@ body {
 button {
   background-color: #4CAF50;
   border: 3px;
-  color: rgb(7, 127, 226);
+  color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
+  font-size: 12px;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a {
+  color: white;
 }
