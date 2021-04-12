@@ -27,3 +27,8 @@ a:link {
 a {
   color: white;
 }
+
+a:hover {
+	text-decoration: none;
+  color: #1b3815;
+}
