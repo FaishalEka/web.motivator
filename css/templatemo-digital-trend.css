@@ -557,7 +557,7 @@
   -----------------------------------------*/
 
   .site-footer {
-    background: var(--dark-color);
+    background: #212529;
     padding: 7em 0 6em 0;
   }
 
@@ -581,11 +581,6 @@
   .site-footer .social-icon {
     margin-top: 6em;
   }
-
-  .copyright-text {
-    margin-top: 5.3em;
-  }
-
 
 
   /*---------------------------------------
