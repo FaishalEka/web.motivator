@@ -36,12 +36,15 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
+
                     <li class="nav-item">
                         <a href="https://www.instagram.com/motivatorbisnis/" class="nav-link">Instagram</a>
                     </li>
+
                     <li class="nav-item">
-                        <a href="login.html" class="nav-link">Login</a>
+                        <a href="login.html" class="nav-link">About</a>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -102,7 +105,7 @@
           <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
             <h4 class="my-4">Our Address</h4>
 
-            <p class="mb-1"><i class="fa fa-home mr-2 footer-icon"></i><a href="https://cutt.ly/ucJ5Xqq">Komplek Buana Citra Ciwastra C, Jl. Batusari No.27, Buahbatu, Kec. Bojongsoang, Bandung, Jawa Barat 40287></a></p>
+            <p class="mb-1"><i class="fa fa-home mr-2 footer-icon"></i><a href="https://cutt.ly/ucJ5Xqq">Komplek Buana Citra Ciwastra C, Jl. Batusari No.27, Buahbatu, Kec. Bojongsoang, Bandung, Jawa Barat 40287</a></p>
           </div>
 
           <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">

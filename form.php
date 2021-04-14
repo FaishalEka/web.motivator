@@ -11,7 +11,7 @@
     </head>
     <body >
 
-        <div class="d-flex align-items-center light-blue-gradient" style="height: 100vh;">
+        <div class="d-flex align-items-center light-blue-gradient" style="height: 110vh;">
             <div class="container" >
                 <div class="d-flex justify-content-center">
                     <div class="col-md-6">
@@ -70,13 +70,7 @@
                                         <label class="form-check-label" for="exampleCheck1">Semua data yang diinput sudah benar?</label>
                                     </div>
 
-                                    <button onclick="goBack()">Kembali</button>
-                                    <script>
-                                        function goBack() {
-                                            window.history.back();
-                                        }
-                                    </script>
-
+                                    <button> <a href="index.html" class="button">Kembali</button>
                                     <button> <a href="whatsapp://send?text=Silahkan Isi Formulir dibawah ini, lalu kirim                                         
                                         Nama : 
                                         
