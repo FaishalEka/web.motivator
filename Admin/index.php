@@ -1,3 +1,17 @@
+<?php
+// menghubungkan dengan koneksi database
+include 'library.php';
+
+// mengambil data barang
+$data_undangan = mysqli_query($mysqli,"SELECT * FROM form");
+// mengambil data barang
+$data_terkonfirmasi = mysqli_query($mysqli,"SELECT * FROM terkonfirmasi");
+
+// menghitung data barang
+$jumlah_undangan = mysqli_num_rows($data_undangan);
+// menghitung data barang
+$jumlah_terkonfirmasi = mysqli_num_rows($data_terkonfirmasi);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -168,27 +182,9 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="pages/examples/contact-us.php" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Contact us</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/search/search.php" class="nav-link">
-                                <i class="fas fa-search nav-icon"></i>
-                                <p>
-                                    Search
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://adminlte.io/docs/3.1/" class="nav-link">
-                                <i class="nav-icon fas fa-file"></i>
-                                <p>Documentation</p>
-                            </a>
-                        </li>
+                    </ul>
                 </nav>
+            </div>
         </aside>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -211,36 +207,6 @@
                 <div class="container-fluid">
                     <!-- Info boxes -->
                     <div class="row">
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <div class="info-box">
-                                <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
-
-                                <div class="info-box-content">
-                                    <span class="info-box-text">CPU Traffic</span>
-                                    <span class="info-box-number">
-                                        10
-                                        <small>%</small>
-                                    </span>
-                                </div>
-                                <!-- /.info-box-content -->
-                            </div>
-                            <!-- /.info-box -->
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <div class="info-box mb-3">
-                                <span class="info-box-icon bg-danger elevation-1">
-                                    <i class="fas fa-thumbs-up"></i>
-                                </span>
-                                <div class="info-box-content">
-                                    <span class="info-box-text">Likes</span>
-                                    <span class="info-box-number">41,410</span>
-                                </div>
-                                <!-- /.info-box-content -->
-                            </div>
-                            <!-- /.info-box -->
-                        </div>
-                        <!-- /.col -->
                         <!-- fix for small devices only -->
                         <div class="clearfix hidden-md-up"></div>
                         <div class="col-12 col-sm-6 col-md-3">
@@ -249,8 +215,8 @@
                                     <i class="fas fa-shopping-cart"></i>
                                 </span>
                                 <div class="info-box-content">
-                                    <span class="info-box-text">Sales</span>
-                                    <span class="info-box-number">760</span>
+                                    <span class="info-box-text">Event</span>
+                                    <span class="info-box-number"><?= $jumlah_terkonfirmasi ?></span>
                                 </div>
                                 <!-- /.info-box-content -->
                             </div>
@@ -263,8 +229,8 @@
                                     <i class="fas fa-users"></i>
                                 </span>
                                 <div class="info-box-content">
-                                    <span class="info-box-text">New Members</span>
-                                    <span class="info-box-number">2,000</span>
+                                    <span class="info-box-text">Invitation</span>
+                                    <span class="info-box-number"><?= $jumlah_undangan ?></span>
                                 </div>
                                 <!-- /.info-box-content -->
                             </div>
