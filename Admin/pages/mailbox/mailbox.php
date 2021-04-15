@@ -165,26 +165,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="../../pages/examples/contact-us.php" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Contact us</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../pages/search/search.php" class="nav-link">
-                                <i class="fas fa-search nav-icon"></i>
-                                <p>
-                                    Search
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://adminlte.io/docs/3.1/" class="nav-link">
-                                <i class="nav-icon fas fa-file"></i>
-                                <p>Documentation</p>
-                            </a>
-                        </li>
                     </ul>
                 </nav>
             </div>
