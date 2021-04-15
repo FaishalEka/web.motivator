@@ -23,8 +23,8 @@
   }
 
   :root {
-    --primary-color:        #0caf35;
-    --secondary-color:      #0caf35;
+    --primary-color:        #32cf59;
+    --secondary-color:      #52b96c;
     --white-color:          #ffffff;
     --dark-color:           #171819;
     --project-bg:           #f0f8ff;
@@ -144,8 +144,8 @@
   }
 
   .custom-btn.btn-bg {
-    background: var(--white-color);
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(trasnparent);
     border-color: transparent;
 	transition: all .3s ease;
   }
@@ -156,7 +156,6 @@
     color: var(--white-color);
     border-color: transparent;
   }
-
 
   /*---------------------------------------
      GENERAL               
@@ -231,8 +230,29 @@
     font-size: var(--menu-font-size);
     letter-spacing: 0.4px;
     margin: 0 1.6em;
-    padding: 0.6em;
+    padding: 5px 9px;
   }
+
+  .nav-btn {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: #FFFFFF;
+  
+    padding: 10px 12px;
+    border-radius: 30px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: 16px 5px !important;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+    .nav-btn:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+  
 
   .nav-link.active,
   .nav-link:hover {
@@ -340,7 +360,7 @@
   }
 
   .hero-bg {
-    background: linear-gradient(170deg, var(--primary-color) 64%, var(--white-color) 30%);
+    background: linear-gradient(120deg, #0D57AC 0%, #0caf35 100%);
   }
 
   .hero-image {
@@ -390,21 +410,6 @@
 
   .project-info .project-icon {
     background: var(--primary-color);
-  }
-
-  .project-icon {
-    position: absolute;
-    right: 30px;
-    top: 40px;
-    background: var(--dark-color);
-    border-radius: var(--border-radius-large);
-    color: var(--white-color);
-    font-size: var(--h2-font-size);
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    padding-left: 5px;
   }
 
   .owl-theme .owl-dots .owl-dot {

@@ -52,7 +52,7 @@
 
                                     <div class="form-group">
                                             <label for="exampleInputEmail1">Tanggal pelaksanaan: </label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="(DD/MM/YY)">
+                                            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="(DD/MM/YY)">
                                         </div>
                                         
                                     <div class="form-group">
@@ -70,7 +70,7 @@
                                         <label class="form-check-label" for="exampleCheck1">Semua data yang diinput sudah benar?</label>
                                     </div>
 
-                                    <button> <a href="index.html" class="button">Kembali</button>
+                                    <button> <a href="index.php" class="button">Kembali</button>
                                     <button> <a href="whatsapp://send?text=Silahkan Isi Formulir dibawah ini, lalu kirim                                         
                                         Nama : 
                                         

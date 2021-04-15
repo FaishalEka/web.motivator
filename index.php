@@ -37,12 +37,12 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item">
+                    <li class="nav-btn">
                         <a href="https://www.instagram.com/motivatorbisnis/" class="nav-link">Instagram</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="login.html" class="nav-link">About</a>
+                    <li class="nav-btn">
+                        <a href="https://novisetianurviat.com/?i" class="nav-link">About</a>
                     </li>
                     
                 </ul>
@@ -61,7 +61,7 @@
 
                                    <h1 class="text-white" data-aos="fade-up">Motivator Bisnis Indonesia</h1>
 
-                                   <a href="form.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Undang sekarang!</a>
+                                   <a href="form.php" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Undang sekarang!</a>
 
                                    <strong class="d-block py-3 pl-5 text-white" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-phone mr-2"></i> 081359317***</strong>
                               </div>
@@ -70,7 +70,7 @@
                         <div class="col-lg-6 col-12">
                           <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
 
-                            <img src="images/main.png" class="img-fluid" alt="main">
+                            <img src="images/hero.png" class="img-fluid" alt="main">
                           </div>
                         </div>
 
