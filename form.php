@@ -1,3 +1,27 @@
+<?php
+ 
+	// Check If form submitted, insert form data into users table.
+	if(isset($_POST['submit'])) {
+		$nama_instansi= $_POST['instansi'];
+        $nama_pj = $_POST['penanggungjawab'];
+        $nama_event = $_POST['event'];
+        $tema = $_POST['tema'];
+        $email = $_POST['email'];
+        $no_telepon = $_POST['telepon'];
+        $penentuan_jadwal = $_POST['tanggal'];
+        $rentang_usia = $_POST['usia'];
+        $jumlah_audiens = $_POST['jumlahaudiens'];      
+
+		// include database connection file
+		include_once("library.php");
+				
+		// Insert user data into table
+		$result = mysqli_query($mysqli, "INSERT INTO form(nama_instansi, nama_pj, nama_event, tema, email, no_telepon, penentuan_jadwal, rentang_usia, jumlah_audiens ) VALUES('$nama_instansi', '$nama_pj', '$nama_event', '$tema', '$email', '$no_telepon', '$penentuan_jadwal', '$rentang_usia', '$jumlah_audiens')");
+		
+		// Show message when user added
+		echo "Data berhasil di input.";
+	}
+	?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -19,59 +43,60 @@
                             <div class="card-body">
 
                                 <h3>Formulir Undangan</h3>
-                                <form>
+                                <form action="form.php" method="POST" name="form">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Nama Instansi Pengundang: </label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Instansi">
+                                        <input type="text" class="form-control" id="exampleInputEmail1" name="instansi" aria-describedby="emailHelp" placeholder="Nama Instansi">
                                     </div>
 
                                     <div class="form-group">
                                             <label for="exampleInputEmail1">Nama Penanggung Jawab:</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Panitia acara">
+                                            <input type="text" class="form-control" id="exampleInputEmail1" name="penanggungjawab" aria-describedby="emailHelp" placeholder="Panitia acara">
                                         </div>
 
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Nama Event:</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Event">
+                                        <input type="text" class="form-control" id="exampleInputEmail1" name="event" aria-describedby="emailHelp" placeholder="Nama Event">
                                     </div>
 
                                     <div class="form-group">
                                             <label for="exampleInputPassword1">Tema:</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Tema">
+                                            <input type="text" class="form-control" id="exampleInputPassword1" name="tema" placeholder="Tema">
                                         </div>
 
                                     <div class="form-group">
                                             <label for="exampleInputEmail1">Email: </label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                            <input type="text" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Email">
                                         </div>
 
                                     <div class="form-group">
                                             <label for="exampleInputEmail1">Nomor telepon: </label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nomor telepon">
+                                            <input type="text" class="form-control" id="exampleInputEmail1" name="telepon" aria-describedby="emailHelp" placeholder="Nomor telepon">
                                         </div>
 
                                     <div class="form-group">
                                             <label for="exampleInputEmail1">Tanggal pelaksanaan: </label>
-                                            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="(DD/MM/YY)">
+                                            <input type="date" class="form-control" id="exampleInputEmail1" name="tanggal" aria-describedby="emailHelp" placeholder="(DD/MM/YY)">
                                         </div>
                                         
                                     <div class="form-group">
                                             <label for="exampleInputPassword1">Rentang usia audiens: </label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="rentang umur (.. - ..)">
+                                            <input type="text" class="form-control" id="exampleInputPassword1" name="usia" placeholder="rentang umur (.. - ..)">
                                         </div>
 
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Jumlah Audiens: </label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Jumlah audiens">
+                                        <input type="text" class="form-control" id="exampleInputEmail1" name="jumlahaudiens" aria-describedby="emailHelp" placeholder="Jumlah audiens">
                                     </div>
                                     
                                     <div class="form-group form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Semua data yang diinput sudah benar?</label>
+                                        <label class="form-check-label" for="exampleCheck1"name="checklist">Semua data yang diinput sudah benar?</label>
                                     </div>
 
-                                    <button> <a href="index.php" class="button">Kembali</button>
-                                    <button> <a href="whatsapp://send?text=Silahkan Isi Formulir dibawah ini, lalu kirim                                         
+                                    <button> <a href="index.php" class="button" name="kembali">Kembali</button>
+
+                                    <button href="whatsapp://send?text=Silahkan Isi Formulir dibawah ini, lalu kirim                                         
                                         Nama : 
                                         
                                                             Umur : 
@@ -80,7 +105,7 @@
                                         
                                                             Asal Sekolah:                              
                                                             
-                                        &phone=+6283195210808" type="submit" class="button">Submit</button>
+                                        &phone=+6283195210808" type="submit" name="submit" value="add">Submit</button>
                                 </form>
                             </div>
                         </div>

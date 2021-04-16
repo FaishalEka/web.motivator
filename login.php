@@ -32,7 +32,7 @@
 			<div class="wrap-login100">
 				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
 					<span class="login100-form-title">
-						<a href="index.html" class="previous prev-hover">&laquo; BACK</a>
+						<a href="index.php" class="previous prev-hover">&laquo; BACK</a>
 						Log In
 					</span>
 

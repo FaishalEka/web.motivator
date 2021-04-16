@@ -24,10 +24,10 @@
 
   :root {
     --primary-color:        #32cf59;
-    --secondary-color:      #32cf59;
+    --secondary-color:      #52b96c;
     --white-color:          #ffffff;
     --dark-color:           #171819;
-    --project-bg:           #171819;
+    --project-bg:           #f0f8ff;
     --menu-bg:              #0d57ac;
 
     --title-color:          #15141a;
@@ -144,7 +144,7 @@
   }
 
   .custom-btn.btn-bg {
-    background: var(--primary-color);
+    background: var(--white-color);
     color: var(trasnparent);
     border-color: transparent;
 	transition: all .3s ease;
@@ -205,13 +205,14 @@
     width: 100%;
   }
 
+
+
   /*---------------------------------------
     MENU             
   -----------------------------------------*/
 
   .navbar {
     background: var(--menu-bg);
-    border: 3px;
     z-index: 2;
     top: 0;
     right: 0;
@@ -359,12 +360,13 @@
   }
 
   .hero-bg {
-    background: linear-gradient(120deg, #0D57AC 0%, #0caf35 100%);
+    background: linear-gradient(170deg, rgb(36, 180, 36) 64%, var(--white-color) 30%);
+
   }
 
   .hero-image {
     position: relative;
-    top: 0em;
+    top: 2em;
   }
 
 
@@ -374,7 +376,7 @@
   -----------------------------------------*/
 
   .project {
-    background: linear-gradient(180deg, #ffffff 0%, #313131 100%);
+    background: var(--project-bg);
   }
 
   .project-wrapper {
@@ -409,21 +411,6 @@
 
   .project-info .project-icon {
     background: var(--primary-color);
-  }
-
-  .project-icon {
-    position: absolute;
-    right: 30px;
-    top: 40px;
-    background: var(--dark-color);
-    border-radius: var(--border-radius-large);
-    color: var(--white-color);
-    font-size: var(--h2-font-size);
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    padding-left: 5px;
   }
 
   .owl-theme .owl-dots .owl-dot {
@@ -576,7 +563,7 @@
   -----------------------------------------*/
 
   .site-footer {
-    background: #313131;
+    background: #212529;
     padding: 7em 0 6em 0;
   }
 
@@ -715,5 +702,3 @@
       margin-left: 0;
     }
   }
-
-
