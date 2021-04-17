@@ -4,13 +4,8 @@
 	if(isset($_POST['submit'])) {
 		$nama_instansi= $_POST['instansi'];
         $nama_pj = $_POST['penanggungjawab'];
-        $nama_event = $_POST['event'];
-        $tema = $_POST['tema'];
         $email = $_POST['email'];
         $no_telepon = $_POST['telepon'];
-        $penentuan_jadwal = $_POST['tanggal'];
-        $rentang_usia = $_POST['usia'];
-        $jumlah_audiens = $_POST['jumlahaudiens'];      
 
 		// include database connection file
 		include_once("library.php");
@@ -43,6 +38,8 @@
                             <div class="card-body">
 
                                 <h3>Formulir Undangan</h3>
+                                <br>
+                                <h4>Data Diri</h4>
                                 <form action="form.php" method="POST" name="form">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Nama Instansi Pengundang: </label>
@@ -55,16 +52,6 @@
                                         </div>
 
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Nama Event:</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" name="event" aria-describedby="emailHelp" placeholder="Nama Event">
-                                    </div>
-
-                                    <div class="form-group">
-                                            <label for="exampleInputPassword1">Tema:</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1" name="tema" placeholder="Tema">
-                                        </div>
-
-                                    <div class="form-group">
                                             <label for="exampleInputEmail1">Email: </label>
                                             <input type="text" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Email">
                                         </div>
@@ -74,38 +61,9 @@
                                             <input type="text" class="form-control" id="exampleInputEmail1" name="telepon" aria-describedby="emailHelp" placeholder="Nomor telepon">
                                         </div>
 
-                                    <div class="form-group">
-                                            <label for="exampleInputEmail1">Tanggal pelaksanaan: </label>
-                                            <input type="date" class="form-control" id="exampleInputEmail1" name="tanggal" aria-describedby="emailHelp" placeholder="(DD/MM/YY)">
-                                        </div>
-                                        
-                                    <div class="form-group">
-                                            <label for="exampleInputPassword1">Rentang usia audiens: </label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1" name="usia" placeholder="rentang umur (.. - ..)">
-                                        </div>
-
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Jumlah Audiens: </label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" name="jumlahaudiens" aria-describedby="emailHelp" placeholder="Jumlah audiens">
-                                    </div>
-                                    
-                                    <div class="form-group form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1"name="checklist">Semua data yang diinput sudah benar?</label>
-                                    </div>
-
                                     <button> <a href="index.php" class="button" name="kembali">Kembali</button>
 
-                                    <button href="whatsapp://send?text=Silahkan Isi Formulir dibawah ini, lalu kirim                                         
-                                        Nama : 
-                                        
-                                                            Umur : 
-                                                            
-                                                            Alamat: 
-                                        
-                                                            Asal Sekolah:                              
-                                                            
-                                        &phone=+6283195210808" type="submit" name="submit" value="add">Submit</button>
+                                    <button> <a href="form2.php" class="button" name="next">Selanjutnya</button>
                                 </form>
                             </div>
                         </div>
