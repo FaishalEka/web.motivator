@@ -2,7 +2,7 @@
     session_start();
 
     function base_url() {
-        return "http://localhost/pkl/web.motivator";
+        return "http://localhost/WEB/web.motivator";
     }
 
     function cekLogin() {

@@ -5,10 +5,11 @@ body {
 
 .light-blue-gradient {
   background: linear-gradient(120deg, #0D57AC 0%, #0caf35 100%);
+  padding: auto;
 }
 
 .card-body {
-  padding: 40px 20px;
+  padding: 0px 20px
 }
 
 button {
